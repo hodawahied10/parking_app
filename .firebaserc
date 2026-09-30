@@ -1,7 +1,8 @@
 {
   "projects": {
     "parkingapp": "parkingapp-cf7f5",
-    "friend": "parkingapp-c53d1"
+    "friend": "parkingapp-c53d1",
+    "default": "parkingapp-c53d1"
   },
   "targets": {},
   "etags": {}

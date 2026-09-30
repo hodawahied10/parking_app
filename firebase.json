@@ -1,1 +1,40 @@
-{"flutter":{"platforms":{"dart":{"lib/firebase_options.dart":{"projectId":"parkingapp-c53d1","configurations":{"android":"1:624561100662:android:335abcfc18d5701fe5cc57","web":"1:624561100662:web:d6077b2b0e7d5171e5cc57","windows":"1:624561100662:web:0e1fa1998a67f962e5cc57"}}},"android":{"default":{"projectId":"parkingapp-c53d1","appId":"1:624561100662:android:335abcfc18d5701fe5cc57","fileOutput":"android/app/google-services.json"}}}}}
+{
+  "flutter": {
+    "platforms": {
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "parkingapp-c53d1",
+          "configurations": {
+            "android": "1:624561100662:android:335abcfc18d5701fe5cc57",
+            "web": "1:624561100662:web:d6077b2b0e7d5171e5cc57",
+            "windows": "1:624561100662:web:0e1fa1998a67f962e5cc57"
+          }
+        }
+      },
+      "android": {
+        "default": {
+          "projectId": "parkingapp-c53d1",
+          "appId": "1:624561100662:android:335abcfc18d5701fe5cc57",
+          "fileOutput": "android/app/google-services.json"
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "disallowLegacyRuntimeConfig": true,
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run lint"
+      ]
+    }
+  ]
+}

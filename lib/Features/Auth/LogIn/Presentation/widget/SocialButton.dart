@@ -11,7 +11,7 @@ class SocialButton extends StatelessWidget{
   String text;
   String image;
   VoidCallback onTap;
-  SocialButton({required this.image,required this.text,required this.onTap});
+  SocialButton({super.key, required this.image,required this.text,required this.onTap});
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
